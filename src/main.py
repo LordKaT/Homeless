@@ -1,6 +1,8 @@
 from js import document
 import random
 
+print("Welcome to the Text Adventure!")
+
 log = document.getElementById("log")
 
 events = [
