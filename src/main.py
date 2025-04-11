@@ -26,3 +26,5 @@ def handle_action(evt):
 
 def start_game():
     document.getElementById("do-action").addEventListener("click", handle_action)
+
+start_game()
