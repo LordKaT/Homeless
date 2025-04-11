@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mama I Don't Wanna Be Homeless Anymore</title>
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+      font-family: monospace;
+      padding: 20px;
+    }
+    #log {
+      white-space: pre-wrap;
+      background: #111;
+      padding: 10px;
+      border-radius: 4px;
+      height: 300px;
+      overflow-y: auto;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mama I Don't Wanna Be Homeless Anymore</h1>
+  <input id="command" type="text" placeholder="What do you do?" />
+  <button id="do-action">Do It</button>
+
+  <div id="log">You wake up in your car. It's cold. You're out of gas. What now?</div>
+
+  <py-env>
+    - paths:
+      - src/main.py
+  </py-env>
+
+  <py-script src="src/main.py"></py-script>
+
+</body>
+</html>
