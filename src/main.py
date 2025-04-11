@@ -24,7 +24,4 @@ def handle_action(evt):
     update_log(random.choice(events))
     document.getElementById("command").value = ""
 
-def start_game():
-    document.getElementById("do-action").addEventListener("click", handle_action)
-
-start_game()
+document.getElementById("do-action").addEventListener("click", handle_action)
